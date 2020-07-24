@@ -30,18 +30,18 @@
     "start": "node index.js",
     "server": "nodemon pass.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+    
   },
   "devDependencies": {},
   "author": "",
   "license": "ISC",
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/rahul9115/React_project.git"
+    "url": "git+https://github.com/rahul9115/typeform.git"
   },
   "bugs": {
-    "url": "https://github.com/rahul9115/React_project/issues"
+    "url": "https://github.com/rahul9115/typeform/issues"
   },
-  "homepage": "https://github.com/rahul9115/React_project#readme"
+  "homepage": "https://github.com/rahul9115/typeform#readme"
 }

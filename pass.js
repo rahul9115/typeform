@@ -38,7 +38,7 @@ if (process.env.NODE_ENV == 'production') {
         res.sendFile(path.resolve(__dirname, 'client', 'bulid', 'index.html'));
     })
 }
-const PORT = 5000;
+const PORT = 5000 || process.env.PORT;
 const host = "0.0.0.0";
 
 app.listen(PORT, host, function () {

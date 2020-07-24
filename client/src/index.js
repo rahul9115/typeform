@@ -1,5 +1,5 @@
 import fonts from '../node_modules/font-awesome/css/font-awesome.min.css'
-import css from "./components/css/header.css"
+import css from "./components/css/Header.css"
 
 import React from 'react';
 import ReactDOM from 'react-dom';

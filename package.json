@@ -19,7 +19,6 @@
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "prettier": "^1.19.1",
-    "react-scripts": "^1.1.0",
     "stripe": "^8.67.0"
   },
   "engines": {
@@ -30,16 +29,15 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon pass.js",
     "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"", 
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build"
-    
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build"
   },
   "devDependencies": {
-    "react-scripts": "^1.1.0"
+    "react-scripts": "^1.0.2"
   },
   "author": "",
   "license": "ISC",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/rahul9115/typeform.git"
   },

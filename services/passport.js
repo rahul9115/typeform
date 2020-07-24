@@ -7,7 +7,7 @@ const uri = "mongodb+srv://rahul:rahul@cluster0.rpfjy.mongodb.net/<dbname>?retry
 passport.use(new GoogleStrategy({
   clientID: key.clientID,
   clientSecret: key.clientSecret,
-  callbackURL: "/auth/google/callback"
+  callbackURL: "https://intense-badlands-91337.herokuapp.com/auth/google/callback"
 }, (accessToken, refreshToken, profile, done) => {
   var myobj = { googleId: profile.id };
   MongoClient.connect(uri, (err, db) => {

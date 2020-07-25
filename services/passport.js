@@ -7,7 +7,7 @@ const uri = "mongodb+srv://rahul:rahul@cluster0.rpfjy.mongodb.net/<dbname>?retry
 passport.use(new GoogleStrategy({
   clientID: key.clientID,
   clientSecret: key.clientSecret,
-  callbackURL:  absoluteURI+"/auth/google/callback",
+  callbackURL:  key. absoluteURI+"/auth/google/callback",
   proxy:true
 }, (accessToken, refreshToken, profile, done) => {
   var myobj = { googleId: profile.id };

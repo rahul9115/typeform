@@ -9,13 +9,13 @@ class Header extends Component {
     renderContent() {
         switch (this.props.auth) {
             case null:
-                return <a href="/auth/google" className="check">Login with <i class="fa fa-google" aria-hidden="true">oogle </i></a>;
+                return <a href="https://fierce-ravine-83999.herokuapp.com/auth/google" className="check">Login with <i class="fa fa-google" aria-hidden="true">oogle </i></a>;
             case false:
-                return <a href="/auth/google" className="check">Login with <i class="fa fa-google" aria-hidden="true">oogle </i></a>;
+                return <a href="https://fierce-ravine-83999.herokuapp.com/auth/google" className="check">Login with <i class="fa fa-google" aria-hidden="true">oogle </i></a>;
             default:
                 return [
 
-                    <a href="/api/logout" className="logout">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+                    <a href="https://fierce-ravine-83999.herokuapp.com/api/logout" className="logout">Logout <i class="fa fa-sign-out" aria-hidden="true"></i></a>
                 ];
 
 

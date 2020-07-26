@@ -4,5 +4,4 @@ module.exports = {
     callbackURL: "/auth/google/callback",
     cookiekey: process.env.COOKIE_KEY, 
      mongoURI: process.env.MONGODB_URI,
-    absoluteURI:"https://intense-badlands-91337.herokuapp.com"
 }

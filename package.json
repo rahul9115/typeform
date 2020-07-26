@@ -26,12 +26,12 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    
-    "server": "cd client && npm start",
+    "start": "cd client && npm run start",
+    "server": "nodemon pass.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "start": "concurrently \"npm run client\" \"npm run server\""
+    
   },
   "devDependencies": {
     "react-scripts": "^1.0.2"

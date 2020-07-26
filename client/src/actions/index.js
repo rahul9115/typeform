@@ -3,7 +3,7 @@ import axios from "axios";
 export function fetchUser() {
 
     return function (dispatch) {
-        axios.get('/api/output').then(res => dispatch({ type: FETCH_USER, payload: res.data }))
+        axios.get('https://thawing-bastion-73392.herokuapp.com/api/output').then(res => dispatch({ type: FETCH_USER, payload: res.data }))
     }
 
 };

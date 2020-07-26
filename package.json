@@ -27,7 +27,7 @@
   },
   "scripts": {
     
-    "server": "nodemon pass.js",
+    "server": "concurrently \"npm run client\" \"npm run server\"",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client",
